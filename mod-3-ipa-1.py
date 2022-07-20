@@ -206,7 +206,7 @@ def scytale_decipher(message, shift):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     scytale_decipher = ""
     
-    altered_text= len(message) // shift
+    altered_text = len(message) // shift
     
     for i in range(len(message)):
         scytale_decipher = scytale_decipher + message[(i // altered_text) + (len(message) // altered_text) * (i % altered_text)]
